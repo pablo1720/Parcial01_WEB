@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hertz De Potenciar</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="icon" href="/assets/img/loud-speaker.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="/assets/img/speaker.png" alt="Logo">
+                <h1>Beatzzz</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#product">Producto</a>
+                <a href="#features">Características</a>
+                <a href="#reviews">Reseñas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="product" class="product-section">
+            <h2 class="section-title">Nuestro Producto</h2>
+            <div class="product">
+                <img src="/assets/img/bluetooth-speaker.png" alt="Bluetooth Speaker">
+                <div class="product-info">
+                    <h3>Altavoz Beatzzz Ultra Bajos</h3>
+                    <p>Experimente un sonido impresionante a donde quiera que vayas.
+                        Perfecto para exteriores e interiores. Cuenta con diferentes
+                        características para que se acople a todas tus necesidades.
+                    </p>
+                    <p><strong>Precio: $29.99</strong></p>
+                    <button class="buy-button" onclick="openBuyModal()">¡Compra ya!</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2 class="section-title">Características clave</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="https://imgs.search.brave.com/eUxzQJewI7YJT30-CihMHVDMjbYG1wKCJsB4bv8SB9Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzEzLzQ3LzYz/LzM2MF9GXzYxMzQ3/NjM2NF9VR1lTcXd5/MkRiN2sweTlqNVZF/ckJZMG9CV1QxYlgy/My5qcGc"
+                        alt="bluetooth">
+                    <h3>Conectividad Bluetooth</h3>
+                    <p>¡Adios a los cables! Beatzzz cuenta con Conectividad bluetooth...</p>
+                    <button class="learn-more-btn" onclick="openFeatureModal('bluetooth')">Aprender más...</button>
+                </div>
+                <div class="feature-card">
+                    <img src="https://imgs.search.brave.com/2_5g6q39fQe5vT_0kWZRp3A1cTji04UUFze9DNDFcMw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9uaWNo/aWNvbmJhdHRlcnku/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA4L0xvbmct/Q3ljbGUtTGlmZS1C/YXR0ZXJ5LnBuZw"
+                        alt="larga-duracion">
+                    <h3>Batería de larga duración</h3>
+                    <p>¡Hasta 20 horas de vida en una sola carga!</p>
+                    <button class="learn-more-btn" onclick="openFeatureModal('battery')">Aprender más...</button>
+                </div>
+                <div class="feature-card">
+                    <img src="https://imgs.search.brave.com/4Luf3-TUXcL29Y6iEf0MqJhVFLK0oBGy5tnYVFxL-0U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMua29nYW4uY29t/L2ltYWdlcy9taWdo/dHlhcGUvTVBFLTM0/NTQ4NTg0LzEtNjY3/NDUyZmE1Zi0yMzk3/MjYwMjguanBlZz9h/dXRvPXdlYnAmY2Fu/dmFzPTM0MCwyMjYm/Zml0PWJvdW5kcyZo/ZWlnaHQ9MjI2JnF1/YWxpdHk9NzUmd2lk/dGg9MzQw"
+                        alt="resistencia-agua">
+                    <h3>Resistente al Agua</h3>
+                    <p>Certifición IPX7, para que no te preocupes.</p>
+                    <button class="learn-more-btn" onclick="openFeatureModal('water')">Aprender más...</button>
+                </div>
+                <div class="feature-card">
+                    <img src="https://imgs.search.brave.com/fY08g--bHrCW48crv03Qa9ohdgOjtrY4i0wrf5Xvwsk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI4/NzA2NTU1NC9waG90/by9zb3VuZC13YXZl/LndlYnA_YT0xJmI9/MSZzPTYxMng2MTIm/dz0wJms9MjAmYz1w/YVNmenMxUDZndkxU/ZUZwYUlUbGxjekcz/T2k2dVE3RWREamt2/aS1ER0JFPQ"
+                        alt="sonido-estruendoso">
+                    <h3>Sonido Estruendoso</h3>
+                    <p>Doble Driver y Radiadores Pasivos para Audio Inmersivo.</p>
+                    <button class="learn-more-btn" onclick="openFeatureModal('sound')">Aprender más...</button>
+                </div>
+                <div class="feature-card">
+                    <img src="https://imgs.search.brave.com/WB-K9BIPT-tNCqxxXMWSpBLnvDrK_SkZafLiYJFa9zY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kZWZp/bmljaW9uLmRlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDExLzA4/L2JsdWV0b290aC5w/bmc"
+                        alt="Compatibilidad">
+                    <h3>Compatibilidad</h3>
+                    <p>Compatibilidad con difernete dispositivos y sistemas operativos..</p>
+                    <button class="learn-more-btn" onclick="openFeatureModal('compatibility')">Aprender más...</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2 class="section-title">Reseñas de nuestros clientes</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="/assets/img/profile-pic.png" alt="Pablo Castellon" class="profile-pic">
+                            <div class="review-info">
+                                <h3>Pablo Castellon</h3>
+                                <div class="rating">★★★★☆</div>
+                            </div>
+                        </div>
+                        <p>¡Que buen producto! Me encanta la potencia y la vida de la batería.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="/assets/img/profile-pic.png" alt="Pablo Cerritos" class="profile-pic">
+                            <div class="review-info">
+                                <h3>Pablo Cerritos</h3>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>Excelente servicio y tecnología de punta. ¡Altamente Recomendado!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="/assets/img/profile-pic.png" alt="Esteban Castellon" class="profile-pic">
+                            <div class="review-info">
+                                <h3>Esteban Castellon</h3>
+                                <div class="rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                        <p>Tiene buen sonido, pero la aplicación necesita mejoras.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="/assets/img/profile-pic.png" alt="Esteban Castellon" class="profile-pic">
+                            <div class="review-info">
+                                <h3>Esteban Castellon</h3>
+                                <div class="rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                        <p>Me gusta el tamanaño y el peso pero me costó conectarlo a mi celular.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="/assets/img/profile-pic.png" alt="Esteban Castellon" class="profile-pic">
+                            <div class="review-info">
+                                <h3>Esteban Castellon</h3>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>¡Excelente producto! Se los recomiendo. Comprenlo de inmediato.</p>
+                    </div>
+                </div>
+                <button class="carousel-button prev" aria-label="reseña-anterior">&#10094;</button>
+                <button class="carousel-button next" aria-label="siguiente-reseña">&#10095;</button>
+            </div>
+
+            <h3>¡Dejános tu reseña!</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="name">Tu Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Puntuación</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Selecciona puntuación</option>
+                        <option value="1">1 Estrella </option>
+                        <option value="2">2 Estrellas </option>
+                        <option value="3">3 Estrellas </option>
+                        <option value="4">4 Estrellas </option>
+                        <option value="5">5 Estrellas </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Tu Reseña</label>
+                    <textarea id="review" name="review" required></textarea>
+                </div>
+                <div class="form-group file-input-wrapper">
+                    <label for="profile-pic">Selecciona foto de Perfil</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+                <div id="image-preview"></div>
+                <button type="submit" class="submit-btn">Subir Reseña</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFeatureModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <div id="buyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBuyModal()">&times;</span>
+            <h2>Adquiere ya tu altavoz Beatzzz</h2>
+            <div class="color-options">
+                <div class="color-option selected" style="background-color: #000;" data-color="Black"
+                    onclick="selectColor(this)"></div>
+                <div class="color-option" style="background-color: #4169E1;" data-color="Blue"
+                    onclick="selectColor(this)"></div>
+                <div class="color-option" style="background-color: #FF0000;" data-color="Red"
+                    onclick="selectColor(this)"></div>
+            </div>
+            <div class="quantity-selector">
+                <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+            </div>
+            <form class="checkout-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="buyName">Nombre Completo</label>
+                    <input type="text" id="buyName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="departament">Departamento</label>
+                    <select id="departament" name="departament" required>
+                        <option value="">Selecciona un Departamento</option>
+                        <option value="SS">San Salvador</option>
+                        <option value="LL">La Libertad</option>
+                        <option value="SA">Santa Ana</option>
+                        <option value="AG">Aguachapan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP / Código Postal</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <button type="submit" class="submit-btn">Ordenar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Beatzzz. Todos los derechos son reservados.</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
